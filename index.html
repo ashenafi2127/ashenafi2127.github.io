@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashenafi Tadele | Computer Science Graduate & Web Developer</title>
+  <meta name="description" content="Portfolio of Ashenafi Tadele, Computer Science graduate from Injibara University with a 3.766 CGPA and aspiring full-stack web developer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <a href="#home" class="logo">Ashenafi<span>.</span></a>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="mycv.html">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeBtn" aria-label="Change theme">🌙</button>
+      <button id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text reveal">
+      <p class="hello">Hello, I am</p>
+      <h1>Ashenafi Tadele</h1>
+      <h2>I am a <span id="typing"></span><span class="cursor">|</span></h2>
+      <p class="intro">
+        Computer Science graduate from Injibara University with a CGPA of 3.766.
+        I build responsive web experiences with HTML, CSS, and JavaScript, and
+        develop backend systems with Node.js and PostgreSQL. Open to software
+        development roles and internship opportunities.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View my work</a>
+        <a href="#contact" class="btn ghost">Contact me</a>
+        <a href="mycv.html" class="btn ghost">View my CV</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img src="images/profile.jpg" alt="Photo of Ashenafi Tadele" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="photo-fallback">A</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h3 class="title reveal">About me</h3>
+    <div class="about-grid reveal">
+      <p>
+        I am Ashenafi Tadele, a Computer Science graduate from Injibara
+        University with a CGPA of 3.766. I develop user-friendly front ends with
+        HTML, CSS, and JavaScript, and build backend services with Node.js.
+        I also work with PostgreSQL databases. I enjoy learning, solving
+        practical problems, and collaborating on projects where I can keep
+        growing as a web developer.
+      </p>
+      <div class="stats">
+        <div><strong>3.766</strong><span>CGPA</span></div>
+        <div><strong>Injibara</strong><span>University</span></div>
+        <div><strong>Full-stack</strong><span>Learning and building</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <h3 class="title reveal">Skills</h3>
+    <div class="skills-grid">
+      <div class="card reveal">
+        <h4>Frontend Development</h4>
+        <p class="skill-note">Approximate self-assessment</p>
+        <div class="skill-list">
+          <div class="skill-level">
+            <div class="skill-meta"><span>HTML</span><span>85%</span></div>
+            <div class="skill-track"><span class="skill-fill green" role="progressbar" aria-label="HTML proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="--level: 85%"></span></div>
+          </div>
+          <div class="skill-level">
+            <div class="skill-meta"><span>CSS</span><span>80%</span></div>
+            <div class="skill-track"><span class="skill-fill yellow" role="progressbar" aria-label="CSS proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" style="--level: 80%"></span></div>
+          </div>
+          <div class="skill-level">
+            <div class="skill-meta"><span>JavaScript</span><span>65%</span></div>
+            <div class="skill-track"><span class="skill-fill red" role="progressbar" aria-label="JavaScript proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" style="--level: 65%"></span></div>
+          </div>
+          <div class="skill-level">
+            <div class="skill-meta"><span>Responsive design</span><span>75%</span></div>
+            <div class="skill-track"><span class="skill-fill blue" role="progressbar" aria-label="Responsive design proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" style="--level: 75%"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h4>Backend Development</h4>
+        <p class="skill-note">Approximate self-assessment</p>
+        <div class="skill-list">
+          <div class="skill-level">
+            <div class="skill-meta"><span>Node.js</span><span>65%</span></div>
+            <div class="skill-track"><span class="skill-fill green" role="progressbar" aria-label="Node.js proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" style="--level: 65%"></span></div>
+          </div>
+          <div class="skill-level">
+            <div class="skill-meta"><span>Express</span><span>60%</span></div>
+            <div class="skill-track"><span class="skill-fill yellow" role="progressbar" aria-label="Express proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" style="--level: 60%"></span></div>
+          </div>
+          <div class="skill-level">
+            <div class="skill-meta"><span>REST APIs</span><span>60%</span></div>
+            <div class="skill-track"><span class="skill-fill red" role="progressbar" aria-label="REST API proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" style="--level: 60%"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h4>Database</h4>
+        <p class="skill-note">Approximate self-assessment</p>
+        <div class="skill-list">
+          <div class="skill-level">
+            <div class="skill-meta"><span>PostgreSQL</span><span>60%</span></div>
+            <div class="skill-track"><span class="skill-fill blue" role="progressbar" aria-label="PostgreSQL proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" style="--level: 60%"></span></div>
+          </div>
+          <div class="tags"><span>SQL</span></div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h4>Tools</h4>
+        <div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Render</span></div>
+      </div>
+    </div>
+    <!-- EDIT: keep only the skills you can really use -->
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h3 class="title reveal">Projects</h3>
+    <div class="projects-grid">
+
+      <article class="card project reveal">
+        <div class="project-top">📁</div>
+        <h4>File Storage Portfolio</h4>
+        <p>
+          A full-stack app where files (books, music, films, PDFs, photos) are
+          stored permanently, then viewed or downloaded from a link.
+        </p>
+        <div class="tags"><span>Node.js</span><span>Express</span><span>Supabase</span></div>
+        <div class="links">
+          <a href="https://github.com/ashenafi2127" target="_blank">Code</a>
+        </div>
+      </article>
+
+      <article class="card project reveal">
+        <div class="project-top">🌐</div>
+        <h4>Personal Portfolio Website</h4>
+        <p>
+          This website. Responsive, with dark and light mode, built with plain
+          HTML, CSS, and JavaScript and hosted free on GitHub Pages.
+        </p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="links">
+          <a href="https://ashenafi2127.github.io" target="_blank">Live</a>
+          <a href="https://github.com/ashenafi2127/ashenafi2127.github.io" target="_blank">Code</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section alt">
+    <h3 class="title reveal">Education</h3>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <span class="year">Graduate</span>
+        <h4>Bachelor of Science in Computer Science</h4>
+        <p>Injibara University · CGPA 3.766</p>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="year">Ongoing</span>
+        <h4>Self-learning: Full-stack web development</h4>
+        <p>Practicing full-stack development with Node.js, Express, and PostgreSQL through hands-on projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h3 class="title reveal">Contact me</h3>
+    <p class="contact-text reveal">
+      Choose a contact method below. Gmail or Telegram may ask you to sign in or
+      create an account first; accounts are not created automatically. Telegram
+      supports messages, media, and calls when available. The phone link starts a
+      voice call, and GitHub opens my profile. You confirm before sending or calling.
+    </p>
+    <div class="contact-icons reveal">
+
+      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ashenafitadele2127%40gmail.com" class="contact-icon" target="_blank" rel="noopener noreferrer" aria-label="Compose a Gmail message to Ashenafi at ashenafitadele2127@gmail.com" title="Email Ashenafi in Gmail">
+        <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.5L4.5 7v.5L12 13l7.5-5.5V7L12 12.5z"/></svg>
+      </a>
+
+      <a href=https://t.me/a_t_z_21" class="contact-icon" aria-label="Open Ashenafi's Telegram account, @a_t_z_21" title="Telegram">
+        <svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.6-2.3 2.3c-.3.3-.5.5-1 .5l.4-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.6 13 1.9 11.500c-1-.3-1-1 .2-1.5L20.400 3c.9-.3 1.600.2 1.500 1.300z"/></svg>
+      </a>
+
+      <a href="tel:+251925841596" class="contact-icon" aria-label="Call Ashenafi at +251 925 841 596" title="Call">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.56 3.58.56.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.19 2.46.56 3.58a1 1 0 0 1-.25 1.01z"/></svg>
+      </a>
+
+      <a href="https://github.com/ashenafi2127" class="contact-icon" target="_blank" rel="noopener noreferrer" aria-label="Open Ashenafi's GitHub profile" title="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.200 19.500c.5.1.7-.2.7-.5v-1.800c-2.800.6-3.400-1.200-3.400-1.200-.5-1.200-1.100-1.500-1.100-1.500-.9-.6.100-.6.100-.6 1 .1 1.500 1 1.500 1 .9 1.500 2.300 1.100 2.900.8.1-.6.3-1.100.6-1.300-2.200-.3-4.600-1.100-4.600-5 0-1.100.4-2 1-2.700-.1-.3-.4-1.300.1-2.700 0 0 .8-.3 2.800 1a9.600 9.600 0 0 1 5 0c1.900-1.300 2.800-1 2.800-1 .5 1.400.2 2.400.1 2.700.6.700 1 1.600 1 2.700 0 3.900-2.400 4.700-4.600 5 .4.300.7.900.7 1.800v2.700c0 .3.200.6.700.5A10 10 0 0 0 12 2z"/></svg>
+      </a>
+
+      <div class="contact-pending contact-icon" role="img" aria-label="LinkedIn profile coming soon" title="LinkedIn profile coming soon">
+        <svg viewBox="0 0 24 24"><path d="M4.500 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 9h3v12H3zm6 0h2.900v1.700h.1c.4-.8 1.400-1.900 3.200-1.900 3.400 0 4 2.200 4 5.100V21h-3v-6c0-1.400 0-3.200-2-3.200s-2.200 1.500-2.200 3.100V21H9z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ashenafi/ injibara/ethiopia.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
