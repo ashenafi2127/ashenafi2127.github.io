@@ -58,3 +58,64 @@ if (printCvBtn) printCvBtn.addEventListener("click", () => window.print());
 
 // ---------- FOOTER YEAR ----------
 document.getElementById("year").textContent = new Date().getFullYear();
+
+
+
+
+// sms email contact
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+  const btn = document.getElementById('cfBtn');
+  const status = document.getElementById('cfStatus');
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = contactForm.name.value.trim();
+    const email = contactForm.email.value.trim();
+    const message = contactForm.message.value.trim();
+
+    if (!name || !email || !message) {
+      alert('Please fill in your name, email, and message.');
+      return;
+    }
+
+    // No valid email -> tell the visitor to create an account first
+    if (!emailPattern.test(email)) {
+      alert('Please enter a real email address. If you do not have an email account, create a Gmail account first (https://accounts.google.com/signup), then send your message.');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    status.className = '';
+    status.textContent = '';
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        status.className = 'ok';
+        status.textContent = 'Message sent! Thank you, I will reply to your email soon.';
+        alert('Your message was sent successfully.');
+        contactForm.reset();
+      } else {
+        throw new Error(data.message || 'Failed');
+      }
+    } catch (err) {
+      status.className = 'err';
+      status.textContent = 'Could not send. Please check your internet and try again, or use Gmail/Telegram above.';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Send message';
+    }
+  });
+}
+
